@@ -1,0 +1,1 @@
+APP_TITLE = "UC Online Course Build Plan Tool"

@@ -1,0 +1,141 @@
+/* Layout & typography */
+.block-container {
+  max-width: 1000px;
+  padding-top: 1.2rem;
+}
+h1 {
+  margin-bottom: 0.25rem;
+}
+.subtext {
+  color: #444;
+  margin-bottom: 1.25rem;
+}
+.warning-text {
+  color: #e53935;
+  font-weight: 600;
+}
+
+/* Degree pills */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.pill {
+  background: #f3f3f3;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.88rem;
+  color: #222;
+  border: 1px solid #e5e5e5;
+}
+
+/* ---- Primary (Generate) button: green ---- */
+div.stButton > button[kind="primary"] {
+  background-color: #28a745;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+}
+
+div.stButton > button[kind="primary"]:hover {
+  background-color: #218838;
+}
+
+div.stButton > button[kind="primary"][disabled] {
+  background: #9fc79f;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Center + full-width only for the Generate button (by label text) */
+div.stButton:has(
+    > button[kind="primary"][aria-label="Generate Course Build Plan"]
+  ) {
+  text-align: center;
+}
+div.stButton:has(
+    > button[kind="primary"][aria-label="Generate Course Build Plan"]
+  )
+  > button {
+  width: 100%;
+}
+/* Layout & typography */
+.block-container {
+  max-width: 1000px;
+  padding-top: 1.2rem;
+}
+h1 {
+  margin-bottom: 0.25rem;
+}
+.subtext {
+  color: #444;
+  margin-bottom: 1.25rem;
+}
+.warning-text {
+  color: #e53935;
+  font-weight: 600;
+}
+
+/* Degree pills */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.pill {
+  background: #f3f3f3;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.88rem;
+  color: #222;
+  border: 1px solid #e5e5e5;
+}
+
+/* ---- Primary (Generate) button: green ---- */
+div.stButton > button[kind="primary"] {
+  background-color: #28a745;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+}
+
+div.stButton > button[kind="primary"]:hover {
+  background-color: #218838;
+}
+
+div.stButton > button[kind="primary"][disabled] {
+  background: #9fc79f;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Center + full-width only for the Generate button (by label text) */
+div.stButton:has(
+    > button[kind="primary"][aria-label="Generate Course Build Plan"]
+  ) {
+  text-align: center;
+}
+div.stButton:has(
+    > button[kind="primary"][aria-label="Generate Course Build Plan"]
+  )
+  > button {
+  width: 100%;
+}
+
+/* Remove Streamlit's colored header line/shadow, keep the burger menu */
+header[data-testid="stHeader"] {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+header[data-testid="stHeader"]::before,
+header[data-testid="stHeader"]::after {
+  content: none !important;
+}
