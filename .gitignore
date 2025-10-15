@@ -13,13 +13,6 @@ env/
 .conda/
 .conda_env/
 
-# ---- Streamlit ----
-# Local secrets (never commit!)
-.streamlit/secrets.toml
-
-# Streamlit cache
-.streamlit/cache/
-.streamlit/credentials.toml
 
 # ---- Logs ----
 *.log
